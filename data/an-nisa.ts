@@ -1,0 +1,150 @@
+import type { Surah } from '../types';
+
+export const AN_NISA: Surah = {
+  id: 4,
+  name: "An-Nisa'",
+  orderInQuran: 4,
+  revealedIn: 'Madaniyah',
+  numberOfAyat: 176,
+  overview: "Surah ke-4 dalam Al-Qur'an adalah Surah An-Nisa, yang berarti Wanita, yang berfungsi sebagai panduan komprehensif yang membahas berbagai aspek sosial, hukum, dan etika. Surah ini memberikan panduan tentang hubungan keluarga, keadilan, dan interaksi dengan komunitas agama yang berbeda, serta mengungkap karakteristik orang-orang munafik. Surah ini juga berperan dalam mengklarifikasi beberapa kesalahpahaman terkait status wanita dan keyakinan seputar Nabi 'Isa (AS).",
+  topicsCovered: ["Izin untuk empat pernikahan", "Aturan warisan", "Keunggulan pria", "Permohonan dan shalat", "Uang darah (diyat)", "Sifat-sifat munafik"],
+  ayahs: [
+    {
+      id: 1,
+      range: "1-23",
+      text: "Dinamika dan Hak Keluarga",
+      explanation: [
+        "Hubungan keluarga adalah ikatan suci.",
+        "Penekanan pada hak-hak yatim piatu dan anak-anak.",
+        "Pedoman terperinci tentang perwalian untuk janda.",
+        "Repetisi dan penekanan untuk penyimpangan seksual.",
+        "Mengecam praktik-praktik seperti pernikahan paksa dan merampas kekayaan wanita.",
+        "Larangan pernikahan sedarah dengan klasifikasi spesifik.",
+      ],
+    },
+    {
+      id: 2,
+      range: "24-32",
+      text: "Kesucian Wanita dan Hak Finansial",
+      explanation: [
+        "Penetapan hak-hak wanita atas mahar.",
+        "Klarifikasi dan upacara pernikahan yang dimodifikasi.",
+        "Peringatan bagi mereka yang melakukan perzinaan dan hukuman terkait.",
+        "Larangan keinginan terhadap kekayaan orang lain.",
+        "Menyoroti dan memahami masalah hubungan keluarga dan warisan individu.",
+      ],
+    },
+    {
+      id: 3,
+      range: "33-57",
+      text: "Menjaga Kesucian Firman Allah",
+      explanation: [
+        "Petunjuk untuk menghindari alkohol, terutama saat shalat.",
+        "Peringatan terhadap pemeliharaan kesucian di tempat-tempat shalat (masjid).",
+        "Menghindari upaya mendistorsi Firman Allah.",
+        "Kutukan bagi mereka yang meninggalkan kitab suci mereka.",
+        "Menekankan bahwa syirik adalah dosa yang tidak terampuni.",
+        "Dosa yang timbul dari kesombongan menyebabkan penolakan tertentu.",
+        "Orang beriman dijanjikan pahala terbesar.",
+      ],
+    },
+    {
+      id: 4,
+      range: "58-70",
+      text: "Pemerintahan dan Keimanan",
+      explanation: [
+        "Berusaha untuk memerintah sesuai dengan pedoman Al-Qur'an.",
+        "Peringatan kepada Ahli Kitab agar tidak meninggalkan pemerintahan ilahi.",
+        "Perintah untuk menaati Allah dan Rasul.",
+        "Menekankan bahwa pelayanan kepada Allah adalah demi kepentingan terbaik orang beriman.",
+      ],
+    },
+    {
+      id: 5,
+      range: "71-86",
+      text: "Peperangan untuk Perlindungan",
+      explanation: [
+        "Peperangan dilegalkan untuk melindungi hak-hak yang rentan.",
+        "Perjuangan demi Allah lebih diutamakan daripada kepalsuan.",
+        "Kebenaran adalah kontra-produktif.",
+        "Ketaatan kepada Rasulullah adalah ketaatan kepada Allah.",
+        "Dorongan untuk berjuang demi kemajuan melawan musuh.",
+      ],
+    },
+    {
+      id: 6,
+      range: "87-94",
+      text: "Regulasi Peperangan",
+      explanation: [
+        "Perbedaan antara musuh yang jelas dan mereka yang mencari perdamaian.",
+        "Peringatan keras agar tidak berperang melawan orang beriman lainnya.",
+        "Kompensasi untuk pembunuhan yang tidak disengaja.",
+        "Konsekuensi berat bagi seseorang yang sengaja membunuh seorang mukmin.",
+      ],
+    },
+    {
+      id: 7,
+      range: "95-104",
+      text: "Status Pejuang dan Muhajirin",
+      explanation: [
+        "Perbedaan antara barisan pejuang dan mereka yang tinggal di belakang.",
+        "Bantuan bagi orang-orang yang tertindas yang tidak dapat berperang.",
+        "Harapan baik bagi mereka yang berhijrah demi kebebasan beragama.",
+        "Modifikasi shalat untuk para pejuang dan musafir.",
+      ],
+    },
+    {
+      id: 8,
+      range: "105-126",
+      text: "Orang Munafik di Antara Barisan",
+      explanation: [
+        "Orang munafik tidak jelas niatnya tetapi harus ditoleransi.",
+        "Peringatan agar tidak jatuh ke dalam skema orang munafik.",
+        "Rencana terhadap Rasulullah dan orang beriman tidak akan mendapat manfaat.",
+        "Mereka yang mengikuti jalan orang munafik ditakdirkan untuk kesesatan.",
+      ],
+    },
+    {
+      id: 9,
+      range: "127-130",
+      text: "Perlindungan Wanita dalam Urusan Pernikahan",
+      explanation: [
+        "Wanita memiliki penentuan nasib sendiri dalam urusan pernikahan.",
+        "Upaya untuk melindungi wanita dari pengabaian dan pelecehan.",
+        "Pembebasan dari tekanan agama untuk tetap dalam hubungan yang berbahaya.",
+      ],
+    },
+    {
+      id: 10,
+      range: "131-147",
+      text: "Berpegang pada Petunjuk Ilahi untuk Menjaga Diri",
+      explanation: [
+        "Pentingnya berpegang pada Petunjuk Ilahi.",
+        "Peringatan terhadap obsesi dengan keuntungan materi atas keuntungan spiritual.",
+        "Rekonsiliasi kemunafikan dan akuntabilitas diri.",
+        "Ciri-ciri kemunafikan digambarkan, menekankan pertobatan.",
+      ],
+    },
+    {
+      id: 11,
+      range: "148-161",
+      text: "Menanggapi Kerugian dan Pelanggaran",
+      explanation: [
+        "Peringatan terhadap ucapan berbahaya dan dorongan untuk memaafkan.",
+        "Konteks historis anak-anak Israel membunuh nabi-nabi.",
+        "Menggambarkan kesia-siaan tanda-tanda baru bagi mereka yang bertekad untuk tidak percaya.",
+      ],
+    },
+    {
+      id: 12,
+      range: "162-176",
+      text: "Bukti yang Cukup dan Keyakinan yang Benar",
+      explanation: [
+        "Al-Qur'an sebagai bukti yang cukup untuk keasliannya.",
+        "Menegaskan kesatuan semua nabi Allah.",
+        "Pesan dari semua nabi adalah untuk tidak percaya pada 'Isa dan melakukan syirik.",
+        "Keyakinan yang benar pada 'Isa dan melakukan perbuatan saleh sebagai persyaratan untuk pahala.",
+      ],
+    },
+  ],
+};

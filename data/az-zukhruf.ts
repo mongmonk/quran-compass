@@ -1,0 +1,113 @@
+import type { Surah } from '../types';
+
+export const AZ_ZUKHRUF: Surah = {
+  id: 43,
+  name: "Az-Zukhruf",
+  orderInQuran: 43,
+  revealedIn: 'Makiyah',
+  numberOfAyat: 89,
+  overview: "Surah Az-Zukhruf mengkritik kaum pagan karena secara buta mengikuti nenek moyang mereka, menyebut malaikat sebagai putri-putri Allah. Surah ini juga mencela mereka karena menyatakan bahwa Muhammad (ﷺ) tidak layak menerima wahyu karena kurangnya kekayaan. Selain itu, surah ini mengutuk mereka karena menyekutukan berhala dengan Allah dalam ibadah, meskipun mengakui-Nya sebagai satu-satunya Pencipta langit dan bumi. Terakhir, surah ini memperingatkan kaum pagan akan hukuman yang mengerikan di Neraka dan menjanjikan orang-orang beriman pahala besar di Surga.",
+  topicsCovered: ["Allah menciptakan segalanya", "orang kafir menyekutukan perempuan dan malaikat dengan Allah", "Kisah Nabi Musa (AS)", "Maryam (RA) diutus kepada Bani Israil."],
+  ayahs: [
+    {
+      id: 1,
+      range: "1-9",
+      text: "Mukjizat Al-Qur'an",
+      explanation: [
+        "Kejelasan Al-Qur'an dalam bahasa Arab ditekankan.",
+        "Al-Qur'an dihormati sebagai sesuatu yang agung dan penuh hikmah.",
+        "Kekafiran diperingatkan karena pemborosan.",
+        "Ejekan historis terhadap para nabi diceritakan kembali.",
+        "Penciptaan langit dan bumi oleh Allah diakui.",
+        "Semua pada akhirnya akan kembali kepada Allah.",
+      ],
+    },
+    {
+      id: 2,
+      range: "10-19",
+      text: "Pertanyaan dan Kekafiran",
+      explanation: [
+        "Orang-orang mempertanyakan hikmah Allah dalam memberikan anak perempuan.",
+        "Orang-orang kafir menyatakan ketidaksenangan memiliki anak perempuan.",
+        "Mereka menolak Al-Qur'an dan Muhammad (ﷺ), menyebutnya sihir.",
+        "Kebenaran yang dibawa oleh Al-Qur'an diingkari.",
+        "Orang-orang kafir menghadapi hukuman karena menolak para rasul.",
+      ],
+    },
+    {
+      id: 3,
+      range: "20-29",
+      text: "Warisan Ibrahim (AS)",
+      explanation: [
+        "Ibrahim (AS) menolak penyembahan berhala dan percaya kepada Allah.",
+        "Warisan tauhidnya bertahan di antara keturunannya.",
+        "Orang-orang kafir menolak Al-Qur'an sebagai sihir.",
+        "Orang-orang mengikuti agama leluhur tanpa pengawasan.",
+        "Allah memberikan barang-barang duniawi sampai kebenaran terungkap.",
+        "Akhirat melampaui kenikmatan duniawi yang sementara.",
+      ],
+    },
+    {
+      id: 4,
+      range: "30-35",
+      text: "Kebenaran Al-Qur'an dan Kekafiran",
+      explanation: [
+        "Orang-orang kafir menolak Al-Qur'an karena pembawanya.",
+        "Mereka percaya individu yang lebih kaya seharusnya menerima wahyu.",
+        "Hikmah Allah dalam mendistribusikan rezeki ditekankan.",
+        "Sifat fana dari harta benda duniawi disorot.",
+        "Nilai sejati Akhirat ditekankan di atas kekayaan duniawi.",
+      ],
+    },
+    {
+      id: 5,
+      range: "36-45",
+      text: "Penipuan Setan dan Mengingat Allah",
+      explanation: [
+        "Mereka yang mengabaikan peringatan Allah disesatkan oleh Setan.",
+        "Setan menipu, menyesatkan manusia.",
+        "Penyesalan menanti mereka yang mengikuti Setan pada Hari Kiamat.",
+        "Hanya Allah yang dapat membimbing orang yang tersesat.",
+        "Pembalasan menanti orang-orang kafir, bahkan jika Muhammad (ﷺ) telah tiada.",
+        "Muhammad diperintahkan untuk berpegang teguh pada Al-Qur'an.",
+      ],
+    },
+    {
+      id: 6,
+      range: "46-56",
+      text: "Musa (AS) dan Firaun",
+      explanation: [
+        "Musa (AS) menghadapi Firaun dan para pembesarnya dengan tanda-tanda, tetapi mereka mengolok-oloknya.",
+        "Meskipun ada tanda-tanda yang berat, Firaun tetap dalam kekafiran.",
+        "Firaun membuat janji palsu kepada Musa (AS), lalu mengingkarinya.",
+        "Firaun menyombongkan kekuasaannya dan meremehkan Musa (AS).",
+        "Dia menipu kaumnya dan menghadapi hukuman dengan ditenggelamkan.",
+      ],
+    },
+    {
+      id: 7,
+      range: "57-67",
+      text: "Isa (AS) dan Peringatan terhadap Penipuan",
+      explanation: [
+        "Orang-orang mengolok-olok Isa (AS), memperdebatkan statusnya.",
+        "Isa (AS) digambarkan sebagai hamba Allah dan tanda bagi Bani Israil.",
+        "Kekuasaan Allah disorot, sebuah peringatan akan Kiamat.",
+        "Peran Setan dalam penipuan ditekankan.",
+        "Isa (AS) mengklarifikasi kesalahpahaman, mendesak ketaatan kepada Allah.",
+      ],
+    },
+    {
+      id: 8,
+      range: "68-89",
+      text: "Pahala dan Hukuman, Kepedulian Muhammad (ﷺ)",
+      explanation: [
+        "Orang-orang beriman dijanjikan keselamatan dan Surga.",
+        "Orang-orang zalim menghadapi siksaan abadi di Neraka.",
+        "Sifat Allah yang Maha Mengetahui dan Maha Tinggi ditekankan.",
+        "Muhammad (ﷺ) diperintahkan untuk membiarkan orang-orang kafir pada nasib mereka.",
+        "Allah adalah satu-satunya Tuhan, dan dewa-dewa palsu tidak memiliki kekuatan.",
+        "Muhammad (ﷺ) mengungkapkan keprihatinan atas kekafiran kaumnya.",
+      ],
+    },
+  ],
+};

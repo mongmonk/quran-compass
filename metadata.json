@@ -1,0 +1,5 @@
+{
+  "name": "Quran Compass v.3 pdf",
+  "description": "An interactive web application to explore the chapters (Surahs) of the Holy Quran, starting with Al-Fatihah. It features Indonesian translations, detailed explanations for each verse, and user-friendly controls for theme (light/dark) and font size.",
+  "requestFramePermissions": []
+}
