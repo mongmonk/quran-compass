@@ -4,7 +4,7 @@ interface PasswordProtectionProps {
   onAuthenticated: () => void;
 }
 
-const APP_PASSWORD = "081234";
+const APP_PASSWORD = "081234567";
 
 const PasswordProtection: React.FC<PasswordProtectionProps> = ({ onAuthenticated }) => {
   const [password, setPassword] = useState('');

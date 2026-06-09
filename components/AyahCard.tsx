@@ -1,6 +1,7 @@
 import React from 'react';
 import type { Ayah } from '../types';
 import { useFontSize } from '../contexts/FontSizeContext';
+import { withHonorifics } from '../utils/honorifics';
 
 interface AyahCardProps {
   ayah: Ayah;
@@ -34,7 +35,7 @@ const AyahCard: React.FC<AyahCardProps> = ({ ayah }) => {
           >
             <p className="text-base font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-2">Ayat {ayah.range}</p>
             <p className="text-lg md:text-xl leading-relaxed">
-              {ayah.text}
+              {withHonorifics(ayah.text)}
             </p>
           </div>
         </div>
@@ -49,7 +50,7 @@ const AyahCard: React.FC<AyahCardProps> = ({ ayah }) => {
         <div className="p-4 bg-white dark:bg-gray-800 flex-grow">
           <ul className={`list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300 ${fontClass}`}>
             {ayah.explanation.map((point, index) => (
-              <li key={index}>{point}</li>
+              <li key={index}>{withHonorifics(point)}</li>
             ))}
           </ul>
         </div>

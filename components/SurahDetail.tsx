@@ -4,6 +4,7 @@ import InfoCard from './InfoCard';
 import AyahCard from './AyahCard';
 import { QuranIcon, KaabaIcon } from './Icons';
 import { surahInfo } from '../data/surah-info';
+import { withHonorifics } from '../utils/honorifics';
 
 interface SurahDetailProps {
   surah: Surah;
@@ -40,7 +41,7 @@ const SurahDetail: React.FC<SurahDetailProps> = ({ surah }) => {
             </div>
             <div className="flex-1">
                  <h3 className="text-2xl font-bold mb-2 uppercase tracking-wide">Gambaran Umum</h3>
-                 <p className="text-lg leading-relaxed text-gray-600 dark:text-gray-300">{surah.overview}</p>
+                 <p className="text-lg leading-relaxed text-gray-600 dark:text-gray-300">{withHonorifics(surah.overview)}</p>
             </div>
              <div className="flex flex-col items-center gap-2 p-3 bg-gray-100 dark:bg-gray-700 rounded-lg mt-4 md:mt-0 self-center md:w-1/4">
                 <div className="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-gray-900 dark:bg-black text-amber-400">
@@ -51,7 +52,7 @@ const SurahDetail: React.FC<SurahDetailProps> = ({ surah }) => {
                   <div className="mt-2 flex flex-wrap justify-center gap-2">
                     {surah.topicsCovered.map((topic, index) => (
                       <span key={index} className="bg-gray-200 dark:bg-gray-600 text-xs font-semibold px-2.5 py-1 rounded-full">
-                        {topic}
+                        {withHonorifics(topic)}
                       </span>
                     ))}
                   </div>
