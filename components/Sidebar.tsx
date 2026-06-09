@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState, useMemo } from 'react';
 import type { Surah } from '../types';
 import { CloseIcon } from './Icons';
+import SearchBar from './SearchBar';
+import { searchSurahs } from '../utils/searchSurahs';
 
 interface SidebarProps {
   surahs: Surah[];
@@ -11,6 +13,9 @@ interface SidebarProps {
 }
 
 const Sidebar: React.FC<SidebarProps> = ({ surahs, selectedSurah, onSelectSurah, isOpen, setIsOpen }) => {
+  const [query, setQuery] = useState('');
+  const results = useMemo(() => searchSurahs(surahs, query), [surahs, query]);
+
   const sidebarClasses = `
     fixed
     top-0 left-0 h-full z-50
@@ -29,23 +34,32 @@ const Sidebar: React.FC<SidebarProps> = ({ surahs, selectedSurah, onSelectSurah,
             <CloseIcon className="w-5 h-5" />
           </button>
         </div>
+        <div className="p-2 border-b border-gray-200 dark:border-gray-700 flex-shrink-0">
+          <SearchBar value={query} onChange={setQuery} size="sm" placeholder="Cari surah..." />
+        </div>
         <nav className="p-2 flex-1 overflow-y-auto">
-          <ul>
-            {surahs.map(surah => (
-              <li key={surah.id}>
-                <button
-                  onClick={() => onSelectSurah(surah)}
-                  className={`w-full text-left p-3 my-1 rounded-lg transition-colors ${
-                    selectedSurah?.id === surah.id
-                      ? 'bg-amber-500 dark:bg-amber-600 text-white font-bold'
-                      : 'hover:bg-gray-100 dark:hover:bg-gray-700'
-                  }`}
-                >
-                  {surah.id}. {surah.name}
-                </button>
-              </li>
-            ))}
-          </ul>
+          {results.length > 0 ? (
+            <ul>
+              {results.map(surah => (
+                <li key={surah.id}>
+                  <button
+                    onClick={() => onSelectSurah(surah)}
+                    className={`w-full text-left p-3 my-1 rounded-lg transition-colors ${
+                      selectedSurah?.id === surah.id
+                        ? 'bg-amber-500 dark:bg-amber-600 text-white font-bold'
+                        : 'hover:bg-gray-100 dark:hover:bg-gray-700'
+                    }`}
+                  >
+                    {surah.id}. {surah.name}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p className="p-3 text-sm text-gray-500 dark:text-gray-400 text-center">
+              Tidak ada surah yang cocok.
+            </p>
+          )}
         </nav>
       </div>
       {/* Overlay */}
